@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <section className="section">
+//       <div className="container">
+//         <h1 className="title">Configura Tu Menú</h1>
+//         <div className="column is-mobile is-half is-offset-one-quarter">
+//           <h3 className="title is-3">Buscar un código de acceso.</h3>
+//           <form >
+//           <div className="field">
+//             <label className="label">Name</label>
+//             <div className="control">
+//               <input
+//                 className={`input`}
+//                 type="text"
+//                 placeholder="Rest1"
+//                 name="store_name"
+//               />
+//             </div>
+//           </div>
+//           </form>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
-export default App;
+// export default App;

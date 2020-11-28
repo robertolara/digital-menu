@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono');
+
+/* LIGHTS */
+$light-100: #F3F3F6;
+$light-200: #E2E2E9;
+$light-300: #D5D5DD;
+$light-400: #B9B9C6;
+$light-500: #9D9DAF;
+
+/* DARKS */
+$dark-100: #5F5F81;
+$dark-200: #4E4E6A;
+$dark-300: #3D3D52;
+$dark-400: #2B2B3B;
+$dark-500: #1A1A23;
+
+/* PRIMARY */
+$hot-purple: #502D53;
+$pale-red: #E14C6C;
+$cream: #F7D7BA;
+$pistachio: #73D4AF;
+$slate-gray: $dark-400;
+
+
+// Update Bulma's global variables
+$family-primary: Xanh Mono, Helvetica, sans-serif;
+$font-aktiv-ext: Xanh Mono, Helvetica, sans-serif;
+
+
+
+$black: $dark-500;
+$black-bis: $dark-400; 
+$black-ter: $dark-300; 
+$grey-darker: $dark-200;
+$grey-dark: $dark-400;
+$grey: $light-500;
+$grey-light: $light-400;
+$grey-lighter: $light-300;
+$grey-lightest: $light-200;
+$white-ter: $light-200;
+$white-bis: color hsl(0, 0%, 98%);
+
+$purple: $hot-purple;
+$red: $pale-red;
+
+// Update some of Bulma's component variables
+
+$dark: $black-ter;
+$menu-item-hover-background-color: $grey-lightest;
+
+
+// Import only what you need from Bulma
+@import "../../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../../node_modules/bulma/sass/base/_all.sass";
+@import "../../../../node_modules/bulma/sass/components/_all.sass";
+@import "../../../../node_modules/bulma/sass/elements/all.sass";
+@import "../../../../node_modules/bulma/sass/form/_all.sass";
+@import "../../../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../../../node_modules/bulma/sass/layout/all.sass";
+
+html, body, #root {
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-aktiv-ext;
+}
+
+.column.is-gray {
+  background-color: $white-ter;
+}
+
+.menu-label {
+  font-weight: 700;
+  font-family: $font-aktiv-ext;
+  color: $dark-300;
+}
+
+.rounded-image {
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+}
+
+.home-block {
+  height: calc(100vh - 2.8rem);
+
+  .column:first-child {
+    border-right: 1px solid $light-400;
+  }
+
+  .menu-list li a {
+    border-bottom: 1px dashed $grey;
+
+    &:hover {
+      background-color: $light-100;
+    }
+  }
+}
+
+.is-scroll  {
+  height: calc(100vh - 2.55rem);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.is-order-1 {
+  order: 1;
+}
+
+.is-order-2 {
+  order: 2;
+}
+
+@media screen and (max-width: $tablet) {
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  // .full-height {
+  //   order: 2;
+  //   overflow: initial;
+  //   height: auto;
+  // }
+
+  .is-first-mobile {
+    order: 1;
+  }
+
+  // .home-block {
+  //   height: auto;
+
+  //   .column:first-child {
+  //     border-right: none;
+  //     border-bottom: 1px solid $light-400;
+  //   }
+  // }
+
+  // .is-order-1, .is-order-2 {
+  //   order: 1;
+  // }
+}
